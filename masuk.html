@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKTIVASI AKUN MURID</title>
+    <link rel="stylesheet" href="styles/login_murid.css">
+    <link rel="Website icon" type="images/png" href="images/Logo.png" style="width: auto; height: auto; border-radius: 3px;">
+
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <div class="header">
+                <a href="index.php" class="backBtn">
+            <button class="backBtn">
+              <span class="backIcon"><img href="index.html" src="images/ep_back.png" /></span>
+              Kembali
+            </button>
+          </a>
+                <div class="logoContainer">
+                <img src="images/Frame 2.png" alt="Sekolah.com" class="logo">
+                </div>
+            </div>
+            
+            <div class="tabContainer">
+                <button class="tabM" onclick="window.location.href='#'">
+                <span class="icon">
+                <img src="images/uis_schedule.png" alt="Murid">
+                </span>
+                MURID
+                </button>
+                <button class="tabO" onclick="window.location.href='loginortu.html'">
+                <span class="icon">
+                <img src="images/ri_parent-fill.png" alt="Orang Tua">
+                </span>
+                ORANG TUA
+                </button>
+            </div>
+            
+            <div class="formContainer">
+                <form method="POST" id="actvMB" action="logic_loginmurid.php" class="actvMB">
+                <div class="row">
+                    <div class="col">
+                        <label for="token_peserta">Token</label>
+                        <input type="text" name="token_peserta" required>
+                    </div>
+
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required>
+                    </div>
+                </div>
+                    
+                <button type="submit" class="submitBtn">Login</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="rightSide">
+            <img src="images/Group 82.png" alt="Background">
+        </div>
+    </div>
+</body>
+</html>

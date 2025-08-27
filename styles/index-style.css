@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+#logo {
+    margin: 30px 35px;
+}
+
+#logo img {
+    width: 220px;
+    height: auto;
+}
+
+#button-container {
+    margin: 10px 35px;
+    position: absolute;
+    top: 20px;  
+    right: 20px;
+}
+
+#running-text {
+    font-size: 20px;
+    color: white;
+    background-color: #DA2828;
+    padding: 10px;
+}
